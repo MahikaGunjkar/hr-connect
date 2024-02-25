@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen" />
 </head>
 <body>
 <form action="/form" method="post">
     <div class="imgcontainer">
     
-      <img src="HR Connect.png.jpg" alt="Avatar" class="avatar">
+      <img src="{{ url_for('static', filename='images/hrconnect.jpg') }}" alt="Avatar" class="avatar">
+      <h1>HR Network</h1>
     </div>
   
     <div class="container">
@@ -20,13 +21,12 @@
       
     </div>
   
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      
-    </div>
     <div>
    
       <a href="/form">Submit</a>
+
+        
+      </div>
 
 
 

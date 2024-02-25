@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee Feedback Form</title>
-  <link rel="stylesheet" type="text/css" href="employee style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='employeestyle.css') }}">
 </head>
 <body>
 
@@ -237,8 +237,7 @@
         <br>
 
         <div class="next">
-            <button type="submit">Submit</button>
-            <a href="/thankyou" class="button-link">Next Page</a>
+            <a href="/thankyou" class="button-link">Submit</a>
         </div>
     </form>
 </div>
