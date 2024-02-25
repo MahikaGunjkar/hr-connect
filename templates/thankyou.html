@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work- Life Balance Form</title>
+  <link rel="stylesheet" type="text/css" href="employee style2.css">
+</head>
+<body>
+
+<div id="thankYouMessage" class="thank-you-message">
+    Thank you for submitting the form!
+    <form action="submit_feedback.php" method="post">
+</div>
+
+<script>
+    function showThankYouMessage() {
+        document.getElementById("meetingForm").style.display = "none";
+        document.getElementById("thankYouMessage").style.display = "block";
+    }
+</script>
+</body>

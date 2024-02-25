@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="employee style.css">
+</head>
+<body>
+
+<div class="feedback-form">
+    <h2>Satisfaction Form</h2>
+    <form action="/thankyou.html" method="post">
+
+        <label>1. Employee Satisfaction Rate</label>
+        <div class="rating-buttons">
+            <input type="radio" id="rating5" name="rating_1" value="0" required>
+            <label for="rating1">   0   </label>
+
+            <input type="radio" id="rating1" name="rating_1" value="1" required>
+            <label for="rating1">   1   </label>
+
+            <input type="radio" id="rating3" name="rating_1" value="2" required>
+            <label for="rating2">   2   </label>
+
+            <input type="radio" id="rating3" name="rating_1" value="3" required>
+            <label for="rating3">   3   </label>
+
+            <input type="radio" id="rating4" name="rating_1" value="4" required>
+            <label for="rating1">   4   </label>
+
+            <input type="radio" id="rating5" name="rating_1" value="5" required>
+            <label for="rating5">   5   </label>
+        </div>
+        <br>
+
+        <label for="relation-with-manager">2.Work-life balance ratio?</label>
+        <div class="rating-buttons1">
+            <input type="radio" id="wlsrating0" name="work_life_satisfaction" value="0" required>
+            <label for="wlsrating0">   0   </label>
+
+            <input type="radio" id="rwmrating1" name="work_life_satisfaction" value="1" required>
+            <label for="wlsrating1">   1   </label>
+
+            <input type="radio" id="wlsrating2" name="work_life_satisfaction" value="2" required>
+            <label for="wlsrating2">   2   </label>
+
+            <input type="radio" id="wlsrating3" name="work_life_satisfaction" value="3" required>
+            <label for="wlsrating3">   3   </label>
+
+            <input type="radio" id="wlsrating4" name="work_life_satisfaction" value="4" required>
+            <label for="wlsrating4">   4   </label>
+
+            <input type="radio" id="wlsrating5" name="work_life_satisfaction" value="5" required>
+            <label for="wlsrating5">   5   </label>
+        </div>
+
+        <br>
+        <label for="relation-with-manager">3.Relation with manager:</label>
+        <div class="rating-buttons1">
+            <input type="radio" id="rwmrating0" name="relation_with_manager" value="0" required>
+            <label for="rwmrating0">   0   </label>
+
+            <input type="radio" id="rwmrating1" name="relation_with_manager" value="1" required>
+            <label for="rwmrating1">   1   </label>
+
+            <input type="radio" id="rwmrating2" name="relation_with_manager" value="2" required>
+            <label for="rwmrating2">   2   </label>
+
+            <input type="radio" id="rwmrating3" name="relation_with_manager" value="3" required>
+            <label for="rwmrating3">   3   </label>
+
+            <input type="radio" id="rwmrating4" name="relation_with_manager" value="4" required>
+            <label for="rwmrating4">   4   </label>
+
+            <input type="radio" id="rwmrating5" name="relation_with_manager" value="5" required>
+            <label for="rwmrating5">   5   </label>
+        </div>
+
+        <br>
+
+        <label for="work-satisfaction">4.Are you satisfied with your team and the project allocated to you?</label>
+        <div class="rating-buttons1">
+            <input type="radio" id="wsrating0" name="work_satisfaction" value="0" required>
+            <label for="wsrating0">   0   </label>
+
+            <input type="radio" id="wlbrating1" name="work_satisfaction" value="1" required>
+            <label for="wsrating1">   1   </label>
+
+            <input type="radio" id="wlbrating2" name="work_satisfaction" value="2" required>
+            <label for="wsrating2">   2   </label>
+
+            <input type="radio" id="wlbrating3" name="work_satisfaction" value="3" required>
+            <label for="wsrating3">   3   </label>
+
+            <input type="radio" id="wlbrating4" name="work_satisfaction" value="4" required>
+            <label for="wsrating4">   4   </label>
+
+            <input type="radio" id="wlbrating5" name="work_satisfaction" value="5" required>
+            <label for="wsrating5">   5   </label>
+        </div>
+
+        <br>
+
+        <label>5. How frequently do you feel well-supported and able to effectively manage your workload or job responsibilities?</label>
+        <div class="rating-buttons">
+            <input type="radio" id="rating5" name="eff" value="0" required>
+            <label for="rating1">   0   </label>
+
+            <input type="radio" id="rating1" name="eff" value="1" required>
+            <label for="rating1">   1   </label>
+
+            <input type="radio" id="rating3" name="eff" value="2" required>
+            <label for="rating2">   2   </label>
+
+            <input type="radio" id="rating3" name="eff" value="3" required>
+            <label for="rating3">   3   </label>
+
+            <input type="radio" id="rating4" name="eff" value="4" required>
+            <label for="rating1">   4   </label>
+
+            <input type="radio" id="rating5" name="eff" value="5" required>
+            <label for="rating5">   5   </label>
+        </div>
+        <br>
+
+        <label for="personal-interests">6. Do you feel that you have enough time outside of work to pursue personal interests or hobbies?</label>
+        <div class="rating-buttons1">
+            <input type="radio" id="pirating0" name="personal_interests" value="0" required>
+            <label for="pirating0">   0   </label>
+
+            <input type="radio" id="pirating1" name="personal_interests" value="1" required>
+            <label for="pirating1">   1   </label>
+
+            <input type="radio" id="pirating2" name="personal_interests" value="2" required>
+            <label for="pirating2">   2   </label>
+
+            <input type="radio" id="pirating3" name="personal_interests" value="3" required>
+            <label for="pirating3">   3   </label>
+
+            <input type="radio" id="pirating4" name="personal_interests" value="4" required>
+            <label for="pirating4">   4   </label>
+
+            <input type="radio" id="pirating5" name="personal_interests" value="5" required>
+            <label for="pirating5">   5   </label>
+        </div>
+
+        <br>
+
+        <label for="policies">7. Do you believe that the company could implement any policies or initiatives to better support work-life balance? </label>
+        <div class="rating-buttons1">
+            <input type="radio" id="porating0" name="policies" value="0" required>
+            <label for="porating0">   0   </label>
+
+            <input type="radio" id="porating1" name="policies" value="1" required>
+            <label for="porating1">   1   </label>
+
+            <input type="radio" id="rwmrating2" name="policies" value="2" required>
+            <label for="porating2">   2   </label>
+
+            <input type="radio" id="porating3" name="policies" value="3" required>
+            <label for="porating3">   3   </label>
+
+            <input type="radio" id="porating4" name="policies" value="4" required>
+            <label for="porating4">   4   </label>
+
+            <input type="radio" id="porating5" name="policies" value="5" required>
+            <label for="porating5">   5   </label>
+        </div>
+
+        <label>8.How would you like the team collaboration?</label>
+        <div class="rating-buttons">
+            <input type="radio" id="rating5" name="collab" value="0" required>
+            <label for="rating1">   0   </label>
+
+            <input type="radio" id="rating1" name="collab" value="1" required>
+            <label for="rating1">   1   </label>
+
+            <input type="radio" id="rating3" name="collab" value="2" required>
+            <label for="rating2">   2   </label>
+
+            <input type="radio" id="rating3" name="collab" value="3" required>
+            <label for="rating3">   3   </label>
+
+            <input type="radio" id="rating4" name="collab" value="4" required>
+            <label for="rating1">   4   </label>
+
+            <input type="radio" id="rating5" name="collab" value="5" required>
+            <label for="rating5">   5   </label>
+        </div>
+        <br>
+
+        <label for="team-environment">9.How well do you rate the team environment?</label>
+        <div class="rating-buttons1">
+            <input type="radio" id="terating0" name="team_environment" value="0" required>
+            <label for="terating0">   0   </label>
+
+            <input type="radio" id="terating1" name="team_environment" value="1" required>
+            <label for="terating1">   1   </label>
+
+            <input type="radio" id="terating2" name="team_environment" value="2" required>
+            <label for="terating2">   2   </label>
+
+            <input type="radio" id="terating3" name="team_environment" value="3" required>
+            <label for="terating3">   3   </label>
+
+            <input type="radio" id="terating4" name="team_environment" value="4" required>
+            <label for="terating4">   4   </label>
+
+            <input type="radio" id="terating5" name="team_environment" value="5" required>
+            <label for="terating5">   5   </label>
+        </div>
+
+        <br>
+
+        <label for="rate-experience">10. How would you like to rate your experience in the company? </label>
+        <div class="rating-buttons1">
+            <input type="radio" id="rerating0" name="rate_experience" value="0" required>
+            <label for="rerating0">   0   </label>
+
+            <input type="radio" id="rerating1" name="rate_experience" value="1" required>
+            <label for="rerating1">   1   </label>
+
+            <input type="radio" id="rerating2" name="rate_experience" value="2" required>
+            <label for="rerating2">   2   </label>
+
+            <input type="radio" id="rerating3" name="rate_experience" value="3" required>
+            <label for="rerating3">   3   </label>
+
+            <input type="radio" id="rerating4" name="rate_experience" value="4" required>
+            <label for="rerating4">   4   </label>
+
+            <input type="radio" id="rerating5" name="rate_experience" value="5" required>
+            <label for="rerating5">   5   </label>
+        </div>
+
+        <br>
+
+        <div class="next">
+            <a href="/thankyou" class="button-link">Next Page</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
