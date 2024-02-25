@@ -45,9 +45,9 @@ def thankyou():
         print(employee_satisfaction, work_life_balance, relation_with_manager, work_satisfaction, eff, personal_interests, policies, collab, team_environment, rate_experience)
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute('INSERT INTO books (title, author, pages_num, review)'
-                    'VALUES (%s, %s, %s, %s)',
-                    (title, author, pages_num, review))
+        cur.execute('INSERT INTO Employees (EmpId, SatA, SatK, SatH, SatS, WLA, WLB, WLC, REL, REW, REE)'
+                    'VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)',
+                    (EmpId, SatA, SatK, SatH, SatS, WLA, WLB, WLC, REL, REW, REE))
         conn.commit()
         cur.close()
         conn.close()
