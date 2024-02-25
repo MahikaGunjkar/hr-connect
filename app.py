@@ -33,10 +33,16 @@ def thankyou():
         employee_satisfaction = request.form['employee_satisfaction']
         work_life_balance = request.form['work_life_balance']
         relation_with_manager = request.form['relation_with_manager']
+        work_satisfaction = request.form['work_satisfaction']
         eff = request.form['eff']
         personal_interests = request.form['personal_interests']
+        policies = request.form['policies']
+        collab= request.form['collab']  
+        team_environment= request.form['team_environment']
+        rate_experience= request.form['rate_experience']
+
         # ... (get other form data)
-        print(employee_satisfaction, work_life_balance, relation_with_manager)
+        print(employee_satisfaction, work_life_balance, relation_with_manager, work_satisfaction, eff, personal_interests, policies, collab, team_environment, rate_experience)
         conn = get_db_connection()
         cur = conn.cursor()
         cur.execute('INSERT INTO books (title, author, pages_num, review)'
