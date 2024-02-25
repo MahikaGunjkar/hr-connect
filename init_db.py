@@ -14,13 +14,19 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 # Execute a command: this creates a new table
-cur.execute('DROP TABLE IF EXISTS books;')
-cur.execute('CREATE TABLE toys (id serial PRIMARY KEY,'
-                                 'title varchar (150) NOT NULL,'
-                                 'author varchar (50) NOT NULL,'
-                                 'pages_num integer NOT NULL,'
-                                 'review text,'
-                                 'date_added date DEFAULT CURRENT_TIMESTAMP);'
+cur.execute('DROP TABLE IF EXISTS Employees;')
+cur.execute('CREATE TABLE Employess (EmpId PRIMARY KEY,'
+                                 ' SatA INT,'
+                                 ' SunA INT,' 
+                                 ' SatK INT, '
+                                 ' SatH INT,' 
+                                 ' SatS INT,'
+                                 ' WLA INT, ' 
+                                 ' WLB INT,'
+                                 ' WLC INT,' 
+                                 ' REL INT,' 
+                                ' REW INT,'
+                                ' REE INT);'
                                  )
 
 conn.commit()
