@@ -36,9 +36,24 @@ def main():
                                 ' REE INT);'
                                  )
         #Query
-        cur.execute("select SatA from Employees")
-        cur.execute("select SunA from Employees")
-        cur.execute("select SatK from Employees")
+
+        A = cur.execute("select SatA from Employees")
+        B = cur.execute("select SunA from Employees")
+        C = cur.execute("select SatK from Employees")
+        D = cur.execute("select SatH from Employees")
+        E = cur.execute("select WLA from Employees")
+        F = cur.execute("select WLB from Employees")
+        G = cur.execute("select WLC from Employees")
+        H = cur.execute("select REL from Employees")
+        I = cur.execute("select REW from Employees")
+        J = cur.execute("select REE from Employees")
+ 
+        for index, row in df.iterrows():
+            for column in df.columns:
+                scale = row[column]
+                print(f'Cell value at row {index}, column {column}: {scale}')
+                
+
 
         # Fetch result
         output = cur.fetchone()[0]
