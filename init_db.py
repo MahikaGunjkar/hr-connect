@@ -15,7 +15,7 @@ cur = conn.cursor()
 
 # Execute a command: this creates a new table
 cur.execute('DROP TABLE IF EXISTS Employees;')
-cur.execute('CREATE TABLE Employess (EmpId PRIMARY KEY,'
+cur.execute('CREATE TABLE Employees (EmpId PRIMARY KEY,'
                                  ' SatA INT,'
                                  ' SunA INT,' 
                                  ' SatK INT, '

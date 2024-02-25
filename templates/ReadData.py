@@ -1,11 +1,9 @@
 #import CreateData
 import RatingScale
+import os
 import pandas as pd
+import psycopg2
 
-# Read data from a CSV file into a DataFrame
-#File path should be taken from the datsource
-file_path = 'C:\Users\Rajshree Soni\OneDrive\Desktop\Analysis\Example.xlsx'
-df = pd.read_excel(file_path)
 
 # Accessing data from the DataFrame
 #for index, row in df.iterrows():

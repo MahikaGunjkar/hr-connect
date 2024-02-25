@@ -1,6 +1,13 @@
 import psycopg2
 #import CreateData
 #import RatingScale
+from dotenv import load_dotenv
+
+# Read data from the table into a DataBase
+
+load_dotenv()
+
+# Open a cursor to perform database operations
 
 def main():
     # Connection string
@@ -15,10 +22,23 @@ def main():
         # Create a new cursor object.
         cur = conn.cursor()
 
-        cur.execute("create table users (user_id int, password varchar)")
-        cur.execute("select John from CreateData")
-        # Test Query
-        cur.execute("SELECT 1")
+        cur.execute('create table Employees (EmpId PRIMARY KEY,'
+                                 ' SatA INT,'
+                                 ' SunA INT,' 
+                                 ' SatK INT, '
+                                 ' SatH INT,' 
+                                 ' SatS INT,'
+                                 ' WLA INT, ' 
+                                 ' WLB INT,'
+                                 ' WLC INT,' 
+                                 ' REL INT,' 
+                                ' REW INT,'
+                                ' REE INT);'
+                                 )
+        #Query
+        cur.execute("select SatA from Employees")
+        cur.execute("select SunA from Employees")
+        cur.execute("select SatK from Employees")
 
         # Fetch result
         output = cur.fetchone()[0]
