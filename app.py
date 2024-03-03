@@ -1,10 +1,10 @@
 from flask import Flask, render_template, redirect, request
 import psycopg2
 import os
-from dotenv import load_dotenv
+# sfrom dotenv import load_dotenv
 
 app = Flask(__name__)
-load_dotenv()
+#load_dotenv()
 
 def get_db_connection():
     conn = psycopg2.connect(

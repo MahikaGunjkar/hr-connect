@@ -1,8 +1,8 @@
 import os
 import psycopg2
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+#load_dotenv()
 
 conn = psycopg2.connect(
         host="org-hrconnect-inst-textbook.data-1.use1.tembo.io",
