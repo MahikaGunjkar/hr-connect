@@ -1,3 +1,4 @@
+'''
 import os
 import psycopg2
 # from dotenv import load_dotenv
@@ -31,4 +32,5 @@ cur.execute('CREATE TABLE Employees (EmpId PRIMARY KEY,'
 
 conn.commit()
 cur.close()
-conn.close()
+conn.close() 
+'''

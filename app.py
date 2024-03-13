@@ -1,6 +1,8 @@
 from flask import Flask, render_template, redirect, request
 import psycopg2
 import os
+import sqlite3
+
 # sfrom dotenv import load_dotenv
 
 app = Flask(__name__)
@@ -58,5 +60,23 @@ def thankyou():
         # Redirect to the home page if accessed directly without form submission
         return redirect('/')
 
+#import sqlite3
+
+def get_data_from_table():
+    connection = sqlite3.connect("org-hrconnect-inst-textbook.data-1.use1.tembo.io")
+    cursor = connection.cursor()
+    #cursor.execute('SELECT  FROM my_table')
+    data = cursor.fetchall()
+    connection.close()
+    return data
+
+
+if __name__ == "__main__":
+    table_data = get_data_from_table()
+    print(table_data)
+    app.run(debug=True)
+
+'''
 if __name__ == '__main__':
     app.run(debug=True)
+'''
